@@ -3,7 +3,6 @@ import freeShipping from "../img/free_shipping.svg"
 import money from "../img/money.svg"
 import support from "../img/support.svg"
 import coverImage from "../img/cover_image.png"
-import { overF } from "./Header"
 
 function Feature({path, title}){
     return(
@@ -37,7 +36,7 @@ function Cover(){
 
 export default function Poster(){
     return(
-        <div className="poster" style={{overflow: {overF}}}>
+        <div className="poster">
             <div className="features">
                 <Feature path={freeShipping} title="Fast service"/>
                 <Feature path={money} title = "100% money back" />

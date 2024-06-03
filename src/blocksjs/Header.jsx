@@ -8,7 +8,7 @@ import { Input } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
 
-export let overF = ""
+const body = document.querySelector("body")
 
 const items = [
   {
@@ -118,11 +118,11 @@ export default function Header(){
         <IconButton func = {() => {
             if(clName == "search__menu"){
               setClName("search__menu active")
-              overF = "hidden"
+              body.style.overflow="hidden"
             }
             else{
               setClName("search__menu")
-              overF = ""
+              body.style.overflow=""
             }
           }} value={search} isLinked={false}/>
         <IconButton value={profile} isLinked={true}/>
